@@ -5,6 +5,7 @@ function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [submitText, setSubmitText] = useState('SUBMIT');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -20,7 +21,11 @@ function ContactForm() {
             message: message,
 
         };
-
+        
+        setSubmitText('SUBMITTED');
+        setTimeout(() => {
+            setSubmitText('SUBMIT');
+        }, 2000);
 
 
         emailjs.send(serviceId, templateId, templateParams, publicKey)
@@ -71,7 +76,7 @@ function ContactForm() {
             </textarea>
             <input
                 type="submit"
-                value="SUBMIT"
+                value={submitText}
             />
         </form>
     );
