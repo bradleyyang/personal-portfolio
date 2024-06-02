@@ -315,7 +315,7 @@ function App() {
               <div className="card__content">
 
                 <p className="card__title">
-                  <span><a target="_blank" rel="noreferrer" href="https://github.com/bradleyyang">Memo</a> </span>
+                  <span><a target="_blank" rel="noreferrer" href="https://github.com/bradleyyang/McHacksApp">Memo</a> </span>
                   <svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
                     <path fill="#ffffff"
